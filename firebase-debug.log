@@ -1,0 +1,44 @@
+[debug] [2018-02-19T14:40:38.719Z] ----------------------------------------------------------------------
+[debug] [2018-02-19T14:40:38.722Z] Command:       /Users/alexiscollado/.nvm/versions/node/v9.4.0/bin/node /Users/alexiscollado/.nvm/versions/node/v9.4.0/bin/firebase deploy --debug
+[debug] [2018-02-19T14:40:38.723Z] CLI Version:   3.17.4
+[debug] [2018-02-19T14:40:38.723Z] Platform:      darwin
+[debug] [2018-02-19T14:40:38.723Z] Node Version:  v9.4.0
+[debug] [2018-02-19T14:40:38.723Z] Time:          Mon Feb 19 2018 22:40:38 GMT+0800 (+08)
+[debug] [2018-02-19T14:40:38.723Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-02-19T14:40:38.737Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-02-19T14:40:38.737Z] > authorizing via signed-in user
+[debug] [2018-02-19T14:40:38.740Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/ux-ph-conf-2017  
+  
+ Mon Feb 19 2018 22:40:38 GMT+0800 (+08)
+[debug] [2018-02-19T14:40:40.447Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T14:40:40.449Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/ux-ph-conf-2017/tokens  
+  
+ Mon Feb 19 2018 22:40:40 GMT+0800 (+08)
+[debug] [2018-02-19T14:40:42.312Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'ux-ph-conf-2017'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing . directory for upload...
+[debug] [2018-02-19T14:40:46.388Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/ux-ph-conf-2017/uploads/-L5iVcYigb9BS7N5Zw4S?fileCount=29&message=  
+  
+ Mon Feb 19 2018 22:40:46 GMT+0800 (+08)
+[debug] [2018-02-19T14:44:17.656Z] <<< HTTP RESPONSE 200
+[debug] [2018-02-19T14:44:17.657Z] [hosting] .tgz uploaded successfully, waiting for extraction
+[info] ✔  hosting: 29 files uploaded successfully
+[debug] [2018-02-19T14:44:18.659Z] >>> HTTP REQUEST POST https://deploy.firebase.com/v1/projects/ux-ph-conf-2017/releases  
+ { hosting: 
+   { public: '.',
+     ignore: [ 'firebase.json', '**/.*', '**/node_modules/**' ],
+     rewrites: [ [Object] ],
+     version: '-L5iVcYigb9BS7N5Zw4S',
+     prefix: '-L5iVcYigb9BS7N5Zw4S/',
+     manifest: [] } } 
+ Mon Feb 19 2018 22:44:18 GMT+0800 (+08)
+[debug] [2018-02-19T14:44:20.809Z] <<< HTTP RESPONSE 200
+[info] 
+[info] ✔  Deploy complete!
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/ux-ph-conf-2017/overview
+[info] Hosting URL: https://ux-ph-conf-2017.firebaseapp.com
