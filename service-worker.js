@@ -1,0 +1,1 @@
+console.log('Finished adding service worker');
